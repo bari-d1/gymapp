@@ -9,7 +9,33 @@ div{
     background-color: var(--dark-gray);
     color: var(--white);
     border: solid var(--light-gray) 1px;
-    font-size: 120%;
+    font-size: 1em;
+}
+
+#top{
+    min-height: 10%;
+}
+#middle{
+    min-height: 75%;
+    padding: 15% 0;
+}
+#bottom{
+    min-height: 15%;
+}
+
+#holder{
+    background-color: var(--dark-gray);
+    color: var(--white);
+    border: solid var(--light-gray) 1px;
+    font-size: 1em;
+    min-height: 896px;
+    height: 896px;
+}
+
+#container{
+    height: 896px;
+    min-height: 896px;
+    min-width: 414px;
 }
 
 input, label{
@@ -37,8 +63,13 @@ button{
     border: 0px;
     margin-left: 10%;
     margin-right: 10%;
-    margin-top: 5%;
+    margin-top: 10%;
     margin-bottom: 5%;
     color: white;
-    font-size: 1.5em;
+    font-size: 2.5em;
+}
+
+button:hover{
+    cursor: pointer;
+    color: var(--red);
 }
