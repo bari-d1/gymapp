@@ -1,2 +1,2 @@
-use yarn
-babel-plugin-marcos
+babel-plugin-marcos -yarn
+react-icons -npm
