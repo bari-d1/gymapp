@@ -1,0 +1,44 @@
+@import url("./palette.css");
+
+*{
+    /* background-color: var(--light-gray); */
+    box-sizing: border-box;
+}
+
+div{
+    background-color: var(--dark-gray);
+    color: var(--white);
+    border: solid var(--light-gray) 1px;
+    font-size: 120%;
+}
+
+input, label{
+    background-color: transparent;
+    border: 0px;
+}
+h2{
+    background-color: transparent;
+    color: var(--red);
+}
+#options{
+    text-align: left;
+    /* width: 25%; */
+    margin-left: 40%;
+    margin-bottom: 5%;
+    /* margin-right: 30%; */
+}
+
+#options label{
+    margin-left: 5%;
+}
+
+button{
+    background-color: transparent;
+    border: 0px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    color: white;
+    font-size: 1.5em;
+}
