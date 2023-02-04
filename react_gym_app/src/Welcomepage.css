@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    max-width: 414px;
+    max-height: 896px;
+}
+.imageholder{
+    background-color: navy;
+    border-radius: 50%;
+    
+}
+.imageholder img{
+    border-radius: 50%;
+}
