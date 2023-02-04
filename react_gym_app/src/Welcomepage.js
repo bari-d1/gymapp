@@ -1,13 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import './Welcomepage.css';
+import './style.css';
 import layer0 from "./images/layer0.png";
 import { FaArrowCircleRight } from 'react-icons/fa';
 
 class Welcomepage extends React.Component {
     render() {
       return(
-        <div id="conatiner">
+        <div id="container">
             <div id="greeting">
                 <h1>Welcome Dayo</h1>
             </div>

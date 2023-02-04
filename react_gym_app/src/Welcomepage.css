@@ -1,9 +1,4 @@
-*{
-    margin: 0;
-    box-sizing: border-box;
-    max-width: 414px;
-    max-height: 896px;
-}
+@import url("./palette.css");
 .imageholder{
     background-color: navy;
     border-radius: 50%;
@@ -11,4 +6,10 @@
 }
 .imageholder img{
     border-radius: 50%;
+}
+#container{
+    background-color: var(--dark-gray);
+    height: 100%;
+    min-width: 414px;
+    min-height: 896px;
 }
