@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 
-div{
+div, nav{
     background-color: var(--dark-gray);
     color: var(--white);
     border: solid var(--light-gray) 1px;
@@ -14,13 +14,22 @@ div{
 
 #top{
     min-height: 10%;
+    max-height: 10%;
+    font-size: 2em;
+    padding-top: 3.6%;
 }
 #middle{
-    min-height: 75%;
-    padding: 15% 0;
+    min-height: 80%;
+    max-height: 80%;
+    padding: 10% 0;
+    border-bottom: 0px;
+    font-size: 1.8em;
 }
 #bottom{
-    min-height: 15%;
+    min-height: 10%;
+    max-height: 10%;
+    border-radius: 25px;
+
 }
 
 #holder{
@@ -47,29 +56,90 @@ h2{
     color: var(--red);
 }
 #options{
+    margin-top: 10%;
     text-align: left;
     /* width: 25%; */
-    margin-left: 40%;
+    margin-left: 20%;
     margin-bottom: 5%;
     /* margin-right: 30%; */
+    line-height: 2em;
 }
 
 #options label{
     margin-left: 5%;
 }
 
-button{
+
+button, #bottom li{
     background-color: transparent;
     border: 0px;
     margin-left: 10%;
     margin-right: 10%;
-    margin-top: 10%;
+    margin-top: 5%;
     margin-bottom: 5%;
     color: white;
     font-size: 2.5em;
+    display: inline-block;
 }
 
-button:hover{
+button, li a{
+    color: white;
+}
+
+button:hover, li a:hover{
     cursor: pointer;
     color: var(--red);
+}
+
+#total{
+    fill: var(--light-gray);
+    /* width: 70%; */
+}
+
+#sofar{
+    fill: var(--red)
+}
+
+#progress{
+    margin-top: 20%;
+}
+
+.box{
+    font-size: 1em;
+}
+/* .box:hover{
+    text-decoration: line-through;
+} */
+
+.box::before{
+    content: "";
+    display: inline-block;
+    margin-right: 30px;
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    background-color: var(--white);
+}
+.box:active::before{
+    background-color: var(--red);
+}
+#progress_bar{
+    width: 80%;
+    height: 30px;
+    margin-left:10%;
+    background-color: var(--light-gray);
+    border-radius: 15px;
+}
+#progress_content{
+    background-color: var(--red);
+    width: 0px;
+    height: 30px;
+    border-radius: 15px;
+
+}
+.display{
+    display:none;
+}
+.strikethrough{
+    text-decoration: line-through;
 }
