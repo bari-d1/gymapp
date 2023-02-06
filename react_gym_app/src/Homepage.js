@@ -13,23 +13,26 @@ let progress_content = document.getElementById("progress_content");
 // progress_content.style.display = "none";
 let progress_bar = document.getElementById("progress_bar");
 let boxes = [false, false, false, false, false, false];
+let ids = [];
+
+
+
 
 class Homepage extends React.Component{
-    // constructor(){
-    //     this.current_progress = "0";
-    //     this.exc_list = ["Planks", "Push Ups", "Bench", "Treadmill", "Pull Ups", "Stretches"];
-    // }
     
     clicked(){
-        // .style.textDecoration = "line-through";
+
         document.getElementById("progress_content").style.display = "block";
         percentages = []
+        ids = [];
         let percent = 0
         for (let m=0; m<exc_list.length; m++){
+            ids.push("_" + (m))
             percent += progress_bar_width/exc_list.length
             percentages.push(percent)
         }
         document.getElementById("progress_content").style.width = percentages[index] + "px"
+        document.getElementById(ids[index]).style.textDecoration = "line-through";
         index++
     }
 
@@ -46,19 +49,15 @@ class Homepage extends React.Component{
                         <div id="middle">
                             <h2>Workout B</h2>
                             <section id="options">
-                                <button className="box" onClick={this.clicked}>Planks</button>
-                                <button className="box" onClick={this.clicked}>Push Ups</button>
-                                <button className="box" onClick={this.clicked}>Bench</button>
-                                <button className="box" onClick={this.clicked}>Treadmill</button>
-                                <button className="box" onClick={this.clicked}>Pull Ups</button>
-                                <button className="box" onClick={this.clicked}>Stretches</button>
+                                {
+                                    exc_list.map((value, index) => {
+                                        return <button id={"_"+index} className="box " key={index} onClick={this.clicked}>{value}</button>
+                                    })
+                                }
+
                             </section>
                             {/* Need to add the progress bar */}
                             <section id="progress">
-                                {/* <svg width="300" height="20">
-                                    <rect id="total" width="300" height="20"></rect>
-                                    <rect id="sofar" width="30" height="20"></rect>
-                                </svg> */}
                                 <div id="progress_bar">
                                     <div id="progress_content" className="display">
                 
