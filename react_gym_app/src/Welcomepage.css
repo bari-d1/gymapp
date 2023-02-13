@@ -1,10 +1,23 @@
 @import url("./palette.css");
-.imageholder{
-    background-color: navy;
+
+*{
+    margin: 0;
+    left: 0;
+}
+#imageholder{
+    background-image: url("images/layer0.png");
+    background-color: var(--red);
     border-radius: 50%;
+    height: 70%;
+    width: 90%;
+    margin: 10% 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     
 }
-.imageholder img{
+.image{
     border-radius: 50%;
 }
 #container{
@@ -12,4 +25,70 @@
     height: 100%;
     min-width: 414px;
     min-height: 896px;
+    display: grid;
+    margin:0;
+    left:0;
+    border-radius: 30px;
 }
+#greeting{
+    border-radius: 20px;
+    /* text-align: center; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-left: 15%; */
+}
+.grid-container {
+    display: grid;
+    grid-template-rows: 20% 60% 20%;
+    background-color: #2196F3;
+}
+
+#proceed {
+    width: 100%;
+    height: 100%;
+    /* background-color: navy; */
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    text-align: center;
+}
+#greeting h1{
+    /* background-color: var(--red); */
+    color: var(--white);
+    border-radius: 20px;
+    padding: 15px;
+    animation-name: background-change;
+    animation-duration: 5s;
+}
+
+#next_page{
+    border-radius: 20px;
+    background-color: var(--red);
+    width: 55%;
+    height: 40%;
+    display: grid;
+    grid-template-columns: auto auto;
+    place-items: center;
+    /* font-size: 1.5em; */
+}
+
+#next_page h1{
+    color: var(--white);
+}
+
+.arrow{
+    color: var(--white);
+}
+.strong{
+    color: var(--white);
+    font-size: 10em;
+    /* /* animation-name: example; */
+    animation-duration: 4s;
+}
+
+@keyframes background-change {
+    from {background-color: var(--red);}
+    to {background-color: none;}
+  }
