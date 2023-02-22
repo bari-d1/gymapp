@@ -1,0 +1,32 @@
+@import url("./palette.css");
+*{
+    height: 100%;
+}
+.container{
+    background-color: var(--dark-gray);
+    max-height: 10%;
+    border-radius: 20px;
+}
+
+nav{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    max-height: 20%;
+    place-items: center;
+    padding-top: 15px;
+}
+
+li{
+    list-style: none;
+    font-size: 2.5em;
+}
+
+li a{
+    color: white;
+}
+
+
+li a:hover{
+    cursor: pointer;
+    color: var(--red);
+}
